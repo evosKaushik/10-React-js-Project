@@ -1,0 +1,20 @@
+:root{
+  --navbar-Height: 72px;
+  --text-clr: #000;
+  --primary-clr: #D01C28;
+  --base-clr: #fff;
+}
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  min-height: 100dvh;
+  color: var(--text-clr);
+  font-family: 'Poppins', sans-serif;
+}
