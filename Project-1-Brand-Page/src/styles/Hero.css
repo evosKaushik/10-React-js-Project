@@ -1,0 +1,88 @@
+#hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  max-width: 1444px;
+  margin: 0 auto;
+  height: calc(100dvh - (var(--navbar-Height)));
+  gap: 2rem;
+}
+
+#hero h1 {
+  font-size: clamp(2rem, 5vw + 1rem, 6.75rem);
+  line-height: clamp(2rem, 4.5vw + .5rem, 6.75rem);
+  font-weight: 800;
+}
+
+#hero .heroContent {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+#hero .heroContent  > p{
+    color: #5A5959;
+    font-size: 1rem;
+    font-weight: 600;
+    width: 68%;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+#hero .heroContent .btnContainer button{
+    font-size: 24px;
+    margin-right: 2rem;
+    padding: 6px 1rem;
+    cursor: pointer;
+}
+
+#hero .heroContent .btnContainer button:first-child{
+    background-color: var(--primary-clr);
+    color: var(--base-clr);
+    border: none;
+    border-radius: 2px;
+}
+#hero .heroContent .btnContainer button:last-child{
+    background-color: transparent;
+    border: 1px solid #000000;
+    border-radius: 2px;
+}
+
+#hero .imageContainer {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+#hero .imageContainer img {
+  width: 100%;
+  max-width: 530px;
+  position: absolute;
+
+}
+
+.productAvailableWrapper{
+    margin-top: 1rem;
+}
+.productAvailableWrapper p{
+    margin-bottom: 10px;
+    color: #5A5959;
+    font-size: 1rem;
+}
+
+.productAvailableIcons{
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+}
+.productAvailableIcons img{
+    height: 2rem;
+    width: 2rem;
+}
